@@ -1,7 +1,9 @@
-import playwright.sync_api
+
+from playwright.sync_api import sync_playwright
+
 
 # 启动 playwright driver 进程
-p = playwright.sync_api.sync_playwright().start()
+p = sync_playwright().start()
 
 
 # 启动浏览器，返回 Browser 类型对象
